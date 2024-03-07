@@ -1,0 +1,379 @@
+.dark-cover {
+    border-radius: 100px;
+    padding: 18px;
+    background-color: black;
+    color: #fff;
+    border: 0;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    border: 1px solid #000;
+
+    &.disabled {
+        background-color: rgba(0, 0, 0, 0.9);
+        color: #fff;
+
+    }
+
+
+}
+
+.light-cover {
+    border: 1px solid #000;
+    border-radius: 100px;
+    padding: 20px;
+    background-color: transparent;
+    color: #000;
+
+    &:hover {
+        border-color: #000;
+    }
+
+}
+
+button.dark-cover {
+    &.btn-elemetn-in {
+
+        column-gap: 40px;
+
+        &.active,
+        &.show {
+            background-color: #fff;
+            color: #000;
+
+            &:hover {
+                background-color: #fff;
+                color: #000;
+            }
+
+        }
+    }
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #fff;
+
+    }
+
+}
+
+.product-counter {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 50px;
+    max-width: max-content;
+    padding: 10px 24px;
+    font-weight: 700;
+
+    button {
+        background-color: transparent;
+        border: 0;
+    }
+
+    input {
+        border: 0;
+        background: transparent;
+        width: 50px;
+    }
+}
+
+.onmalika-breadcrumb {
+    margin: 50px 0;
+
+    a {
+        color: #9E9E9E;
+    }
+
+    li.active {
+        color: #000;
+        font-weight: 600;
+    }
+}
+
+.empty-cart {
+    width: max-content;
+    margin: auto;
+    text-align: center;
+    color: #7B7B7B;
+
+    h4 {
+        width: 260px;
+        margin-bottom: 20px;
+    }
+}
+
+.onmalika-subcategories-list {
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #fafafa;
+
+    &-item {
+        padding: 10px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        border-radius: 30px;
+        color: #000;
+    }
+}
+
+.form-check {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    column-gap: 10px;
+    margin-bottom: 15px;
+    padding-left: 0;
+
+    input[type=radio],
+    input[type=checkbox] {
+        width: 20px;
+        height: 20px;
+        float: none;
+        margin: 0;
+        background-color: #EEEEEE;
+
+        &:focus {
+            box-shadow: none;
+
+        }
+    }
+
+    input:checked {
+        background-color: transparent;
+    }
+}
+
+.form-check-input:checked[type=radio],
+.form-check-input:checked[type=checkbox] {
+    background-image: url('/img/choosen.svg');
+}
+
+.form-check-input:checked {
+    background-color: transparent;
+    border: 1px solid #000;
+    background-size: auto;
+}
+
+.gray-cover {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #FAFAFA;
+    margin-bottom: 20px;
+
+    textarea {
+        background-color: #fff;
+    }
+}
+
+input.form-control {
+    border-radius: 10px;
+    border: 0;
+    height: 60px;
+}
+
+textarea {
+    background-color: #FAFAFA;
+    padding: 15px;
+    border-radius: 10px;
+    resize: none;
+    width: 100%;
+    min-height: 150px;
+    border: 0;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.onmalika-index-categories {
+    margin-bottom: 50px;
+    column-gap: 10px;
+    row-gap: 10px;
+
+    li {
+        .nav-link {
+            background-color: #FAFAFA;
+            border-radius: 50px;
+            padding: 10px 25px;
+            color: #000;
+
+            &.active {
+                background-color: #000;
+            }
+        }
+    }
+}
+
+.multi-range {
+    &-slider {
+        box-shadow: none !important;
+        border: none !important;
+
+        .bar-inner {
+            background-color: #000 !important;
+        }
+
+        .thumb::before {
+            box-shadow: none !important;
+            border: 5px solid #000 !important;
+        }
+
+        .caption {
+            display: none !important;
+        }
+
+
+    }
+
+    &-inputs {
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: nowrap;
+        column-gap: 20px;
+    }
+}
+
+.form-control {
+    &.gray-conrol {
+        background-color: #FAFAFA;
+        height: 50px;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}
+
+.onmalika-dropdown {
+    &-toggle {
+        background-color: #FAFAFA;
+        border: 0;
+
+        svg {
+            margin-left: 40px;
+        }
+
+        &::after {
+            content: none;
+        }
+
+        &:hover {
+            background-color: #FAFAFA;
+
+        }
+
+        &.show {
+            border: 0;
+            background-color: #FAFAFA;
+
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &-menu {
+        top: 10px !important;
+        padding: 15px;
+        border-radius: 10px;
+        background-color: #FAFAFA;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+
+        li {
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+
+        .form-check {
+            margin-bottom: 0;
+        }
+
+        label {
+            font-weight: 500;
+        }
+    }
+}
+
+.onmalika-link {
+
+    color: #000;
+
+}
+
+.onmalika-brand {
+    .col-auto {
+        border-right: 1px solid #EEEEEE;
+
+        &:last-child {
+            border: 0;
+        }
+    }
+}
+
+.onmalika-pagination {
+    column-gap: 10px;
+
+    .dark-cover {
+        padding: 0;
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+    }
+
+    &-links {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 0;
+        background-color: transparent;
+
+        &.active {
+            background-color: #FAFAFA;
+            border-radius: 50%;
+
+        }
+    }
+
+    &-more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+#onmalika-slider {
+    overflow: hidden;
+
+    .row {
+        flex-wrap: nowrap;
+    }
+}
+
+.onmalika-slider-controls {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 10px;
+
+    .dark-cover {
+        padding: 10px;
+        &:disabled{
+opacity: 0.5;
+        }
+    }
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}

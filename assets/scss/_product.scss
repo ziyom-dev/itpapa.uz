@@ -1,0 +1,201 @@
+.onmalika-product {
+    &-title {
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+
+    &-short-title {
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    &-short {
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+
+    &-reviews-stock {
+        display: flex;
+        column-gap: 90px;
+        margin-bottom: 30px;
+    }
+
+    &-reviews {
+        background-color: transparent;
+        border: 0;
+
+        span {
+            text-decoration: underline;
+        }
+    }
+
+    &-price {
+        margin-bottom: 30px;
+    }
+
+    &-btns {
+        display: flex;
+        column-gap: 20px;
+
+        .dark-cover {
+            padding: 20px 130px;
+        }
+
+        .product-counter {
+            padding: 20px 54px;
+        }
+    }
+
+    &-main-img {
+        padding: 60px;
+        background-color: #FAFAFA;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    &-gallery {
+        &-item {
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin: 0;
+            }
+
+            &.active {
+                border: 1px solid black;
+                border-radius: 10px;
+
+                img {
+                    border-radius: 10px;
+
+                }
+            }
+        }
+    }
+
+    &-favorite {
+        background-color: transparent;
+        border: 0;
+
+        svg {
+            &:hover {
+                fill: #000;
+            }
+        }
+    }
+
+    &-rating {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: flex-end;
+    }
+}
+
+.onmalika-accardion {
+    border: 0;
+
+    .accordion {
+        &-item {
+            border: 0;
+
+            button {
+                border: 0;
+                background-color: transparent;
+                box-shadow: none;
+                border-bottom: 1px solid #EEEEEE;
+                font-weight: 700;
+                color: #000;
+
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+        }
+
+        &-body {
+            border-bottom: 1px solid #EEEEEE;
+
+            .form-check {
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            ul {
+                li {
+                    margin-bottom: 15px;
+                    display: flex;
+                    column-gap: 20px;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}
+
+.onmalika-reviews-modal {
+    .modal {
+        &-leave-rating {
+            background-color: #FAFAFA;
+            padding: 15px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+
+            &-stars {
+                display: flex;
+                column-gap: 15px;
+            }
+
+        }
+
+        &-form {
+            textarea {
+                background-color: #FAFAFA;
+                padding: 15px;
+                border-radius: 10px;
+                resize: none;
+                width: 100%;
+                min-height: 150px;
+                border: 0;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        &-reviews {
+            &-item {
+                background-color: #FAFAFA;
+                padding: 15px;
+                border-radius: 10px;
+
+
+                &-info {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 10px;
+
+                    .name {
+                        p {
+                            margin-bottom: 5px;
+                        }
+
+                        span {
+                            color: #7B7B7B;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

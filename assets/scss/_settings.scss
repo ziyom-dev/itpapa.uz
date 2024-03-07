@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+#__nuxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .site-main {
+        flex: 1 1 auto;
+    }
+}
+.onmalika-preloader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    scroll-behavior: smooth;
+    font-weight: 500;
+}
+
+@mixin xxl {
+    @media (max-width: 1399.98px) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (max-width: 1199.98px) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (max-width: 991.98px) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (max-width: 767.98px) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media (max-width: 575.98px) {
+        @content;
+    }
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+
+@media (min-width: 1400px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1440px;
+    }
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+    --bs-gutter-x: 1.25rem;
+}
+.row {
+    --bs-gutter-x: 1.25rem;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    padding: 0;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+h1,
+h2 {
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+section {
+    margin-bottom: 100px;
+}

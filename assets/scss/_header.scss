@@ -1,0 +1,382 @@
+.onmalika-header {
+    position: relative;
+
+    &-top {
+        padding: 10px 0;
+
+        a {
+            padding: 0;
+        }
+
+        &-nav {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        &-nav,
+        &-social {
+            column-gap: 30px;
+        }
+
+        &-currency {
+
+            column-gap: 30px;
+            align-items: center;
+
+            a {
+                padding: 0 5px;
+            }
+
+            &-toggle {
+                cursor: pointer;
+                padding: 8px 38px;
+                background-color: #000;
+                border-radius: 100px;
+                user-select: none;
+                color: #fff;
+
+                span {
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    &-bottom {
+        padding: 25px 0;
+
+        &-menu {
+            column-gap: 65px;
+            align-items: center;
+
+            .btn-elemetn-in {
+                padding: 18px 20px;
+            }
+        }
+
+        &-user {
+            display: flex;
+            column-gap: 20px;
+
+            a {
+                color: #fff;
+                display: flex;
+            }
+
+            &-nav {
+
+                padding: 18px 30px;
+
+            }
+
+
+            &-navigation {
+                display: flex;
+                column-gap: 30px;
+                margin-left: 100px;
+
+                sub {
+                    position: absolute;
+                    top: 0;
+                    color: #fff;
+                    right: 0;
+                }
+            }
+
+            &-links {
+                background-color: transparent;
+                border: 0;
+                padding: 0;
+            }
+        }
+
+        &-tel {
+            font-size: 20px;
+            line-height: 1.2;
+        }
+    }
+
+    hr {
+        margin: 0;
+        border-top-color: #EEE;
+    }
+}
+
+.onmalika-search-modal {
+    .modal {
+        &-dialog {
+            margin: 0;
+            max-width: 100%;
+
+        }
+
+        &-content {
+            border-radius: 0;
+            border: 0;
+            border-radius: 0 0 30px 30px;
+        }
+
+        &-body {
+            padding: 40px 0;
+        }
+
+        &-search-input {
+            display: flex;
+            height: 60px;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+
+            .close {
+                height: 40px;
+                padding: 0;
+                width: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            form {
+                display: flex;
+                width: 70%;
+                column-gap: 20px;
+
+                button {
+                    padding: 20px 65px;
+                }
+
+                .input-group-text {
+                    border-radius: 100px 0 0 100px;
+                    background-color: transparent;
+                    border: 0;
+                    background-color: #FAFAFA;
+                }
+
+                .form-control {
+                    border-radius: 0 100px 100px 0;
+                    background-color: #FAFAFA;
+                    border: 0;
+                    width: 50%;
+                    padding-left: 0;
+                    margin: 0;
+
+                    &:focus {
+                        box-shadow: none;
+
+                    }
+                }
+
+            }
+
+            &-noresult {
+                p {
+                    text-transform: uppercase;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 10px;
+
+                    span {
+                        text-transform: none;
+                    }
+                }
+            }
+
+        }
+
+        &-search-results {
+            &-title {
+                font-size: 16px;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+            }
+
+            ul {
+                li {
+                    margin-bottom: 15px;
+
+                    a {
+                        color: #000;
+                    }
+
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.onmalika-reviews-modal,
+.onmalika-cart-modal {
+    .modal {
+        &-dialog {
+            margin: 0;
+            margin-left: auto;
+            height: 100%;
+            max-width: 590px;
+        }
+
+        &-content {
+            border: 0;
+            border-radius: 0;
+            height: 100%;
+
+        }
+
+        &-header {
+            padding: 20px 0;
+            margin: 0 20px;
+            border-bottom: 1px solid #EEE;
+            justify-content: space-between;
+
+            .dark-cover {
+                height: 30px;
+                padding: 0;
+                width: 30px;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        &-title {
+            font-size: 24px;
+            display: flex;
+            column-gap: 10px;
+            align-items: center;
+
+            span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: #000;
+                font-size: 14px;
+                color: #fff;
+            }
+        }
+
+        &-body {
+            padding: 20px;
+
+            .clean-cart {
+                background-color: transparent;
+                border: 0;
+                color: #7B7B7B;
+                margin-bottom: 20px;
+                display: flex;
+                margin-left: auto;
+            }
+        }
+
+        &-footer {
+            background-color: #FAFAFA;
+            border: 0;
+            justify-content: space-between;
+            align-items: center;
+
+            h4 {
+                font-weight: 700;
+            }
+
+            .dark-cover {
+                padding: 20px 75px;
+            }
+        }
+
+        &-empty {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+
+            h4 {
+                text-transform: uppercase;
+                color: #7B7B7B;
+            }
+
+            p {
+                width: 330px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.onmalika-category {
+    display: none;
+    z-index: 123;
+    position: absolute;
+    top: 100%;
+    margin-top: 25px;
+    left: 0;
+    right: 0;
+
+    &-block {
+        padding: 30px;
+        border-radius: 30px;
+        background-color: #fff;
+
+        &-list {
+            flex-direction: column;
+
+            &.nav-pills {
+
+
+                .nav-link {
+                    border-radius: 50px;
+                    color: #000;
+                    padding: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+
+                    .icon {
+                        max-width: 24px;
+                    }
+
+                    .arrow-icon {
+                        max-width: 14px;
+                    }
+
+                    span {
+                        column-gap: 10px;
+                        display: flex;
+                        align-items: center;
+                        text-align: start;
+                    }
+
+                    &.active {
+                        background-color: #FAFAFA;
+                    }
+                }
+            }
+        }
+
+        &-subcats {
+            border-radius: 20px;
+            padding: 20px;
+            background-color: #FAFAFA;
+
+            li {
+                margin-bottom: 15px;
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+
+            a {
+                color: #000;
+            }
+        }
+    }
+}

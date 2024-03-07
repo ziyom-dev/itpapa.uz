@@ -1,0 +1,30 @@
+.onmalika-carousel {
+    background-color: #09D1C7;
+    color: #fff;
+
+    &-item {
+        h2 {
+            font-size: 96px;
+            margin-bottom: 50px;
+        }
+
+      
+    }
+
+    &-controls {
+        justify-content: flex-start;
+        column-gap: 12px;
+
+        .active {
+            background-color: black;
+        }
+
+        [data-bs-target] {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            opacity: 1;
+            margin: 0;
+        }
+    }
+}

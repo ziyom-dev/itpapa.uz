@@ -1,0 +1,71 @@
+.onmalika-auth {
+    width: 660px;
+    margin: 0 auto;
+    background-color: #FAFAFA;
+    border-radius: 30px;
+    padding: 100px;
+}
+
+.otp-input {
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    margin: 0 7px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    text-align: center;
+    border-radius: 10px;
+    &::placeholder{
+        text-align: center;
+    }
+}
+
+/* Background colour of an input field with value */
+.otp-input.is-complete {
+    background-color: #fff;
+}
+
+.otp-input::-webkit-inner-spin-button,
+.otp-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input::placeholder {
+    font-size: 15px;
+    text-align: start;
+    font-weight: 600;
+}
+
+
+
+.onmalika-user {
+    &-settings {
+        background-color: #FAFAFA;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    &-navigation {
+        .router-link-active {
+
+            background-color: #FAFAFA;
+        }
+
+        .nav-link {
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 10px;
+            align-items: center;
+
+            span {
+                display: flex;
+                column-gap: 10px;
+                align-items: center;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,77 @@
+.onmalika-footer {
+    background-color: #FAFAFA;
+
+
+    &-top {
+        padding: 100px 0;
+
+        &-logo {
+            display: flex;
+            flex-direction: column;
+
+            img {
+                margin-bottom: 20px;
+            }
+
+            a {
+                color: black;
+                margin-bottom: 20px;
+
+                span {
+                    font-size: 36px;
+                    font-weight: 700;
+                }
+            }
+
+            &-social {
+                display: flex;
+                column-gap: 30px;
+            }
+        }
+
+        &-links {
+            display: flex;
+            column-gap: 100px;
+
+            &-title {
+                text-transform: uppercase;
+                margin-bottom: 20px;
+            }
+
+            ul {
+
+
+                li {
+                    margin-bottom: 15px;
+
+                    a {
+                        color: black;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+
+
+
+            &-category {
+                ul {
+                    column-count: 2;
+                }
+            }
+
+        }
+    }
+
+    &-bottom {
+        padding: 25px 0;
+        border-top: 1px solid #000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            color: #000;
+        }
+    }
+}

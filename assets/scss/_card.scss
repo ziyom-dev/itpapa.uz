@@ -1,0 +1,223 @@
+.onmalika-card {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #FAFAFA;
+    position: relative;
+    border: 0;
+
+    &-badges {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        display: flex;
+        column-gap: 4px;
+        z-index: 10;
+
+
+        &-new {
+
+            font-size: 14px;
+            padding: 5px 11px;
+            color: black;
+            border-radius: 50px;
+        }
+
+    }
+
+    &-favorite {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        background-color: transparent;
+        padding: 0;
+        border: 0;
+        z-index: 22;
+
+        &.active {
+            svg {
+                fill: #000;
+            }
+        }
+
+        svg {
+            &:hover {
+                fill: #000;
+            }
+        }
+    }
+
+    &-body {
+        padding: 0;
+        padding-top: 50px;
+
+        &-orderbtn {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &-rating {
+                display: flex;
+                align-items: center;
+                column-gap: 2px;
+            }
+
+            p {
+
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+    }
+
+    &-title {
+        font-size: 16px;
+        margin-bottom: 20px;
+        font-weight: 500;
+        height: 40px;
+    }
+
+    &-price {
+        font-size: 18px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .active {
+            color: #FF2424;
+        }
+
+        p,
+        span {
+            font-weight: 500;
+        }
+
+        p {
+            font-size: 16px;
+            text-decoration: line-through;
+        }
+    }
+
+    &-stock {
+        font-size: 16px;
+        margin-bottom: 20px;
+
+        .stock {
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+
+            p {
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+    }
+
+    img {
+        mix-blend-mode: multiply;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    &.mini-card {
+        padding: 15px;
+
+        img {
+            width: 174px;
+            height: 174px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding-top: 20px;
+        }
+
+        .onmalika-card-title {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            font-weight: 500;
+            height: 40px;
+        }
+
+        .onmalika-card-price {
+            flex-direction: column;
+            align-items: flex-start;
+
+
+        }
+
+        .dark-cover {
+            padding: 10px 22px;
+        }
+    }
+}
+
+.grid-parent {
+    .grid-6 {
+        img {
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+        .card {
+            padding-top: 60px;
+
+            &-body {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+
+                .onmalika-card-body-orderbtn {
+
+                    &-rating {
+                        position: absolute;
+                        top: 50px;
+                        right: 20px;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.onmalika-card-cart {
+    border: 0;
+    position: relative;
+
+    .remove-product {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: transparent;
+        border: 0;
+    }
+
+    &-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    &-price {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+}
+
+.onmalika-category-card {
+    background-color: #FAFAFA;
+    border-radius: 10px;
+    padding: 15px;
+    border: 0;
+    font-weight: 500;
+
+    img {
+        mix-blend-mode: multiply;
+        margin-bottom: 15px;
+    }
+}
